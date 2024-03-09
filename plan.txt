@@ -1,6 +1,6 @@
 Rock Paper Scissors Game:
-    1. Boilor plate HTML Basics
-    2. Boilor plate CSS Basics
+    1. Boilor plate HTML Basics X
+    2. Boilor plate CSS Basics X
     3. Write 'Get Computer Choice' from Rock, Paper or Scissors.
     4. Create playRound function that accepts getComputerChoice, and "Player Selection"
     This must return a string of who wins. Example 'Rock Beats Rock!' CPU WINS!'
