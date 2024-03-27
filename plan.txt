@@ -2,8 +2,8 @@ Rock Paper Scissors Game:
     1. Boilor plate HTML Basics X
     2. Boilor plate CSS Basics X
     3. Write 'Get Computer Choice' from Rock, Paper or Scissors. X
-    4. Create playRound function that accepts getComputerChoice, and "Player Selection"
-    This must return a string of who wins. Example 'Rock Beats Rock!' CPU WINS!'
+    4. Create playRound function that accepts getComputerChoice, and "Player Selection" X
+    This must return a string of who wins. Example 'Rock Beats Rock!' CPU WINS!' X
     5. Create playGame function. INSIDE the function put in 5 playrounds in a row.
     That keeps score. 
     6. Upgrade app so that it takes a prompt from the user. 

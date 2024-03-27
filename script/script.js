@@ -1,6 +1,11 @@
 let computerScore = 0;
 let playerScore = 0; 
 
+alert(
+  "Welcome to Rock Paper Scissors! In a few seconds you will be asked to pick Rock, Paper or Scissors..."
+);
+
+
 
 const choices = ["Rock", "Paper", "Scissors"];
 const getComputerChoice = (arr) => {
@@ -11,6 +16,34 @@ const getComputerChoice = (arr) => {
   const item = arr[randomIndex];
 
   return item;
+};
+
+const getPlayerChoice = () => {
+
+  let playerChoice = prompt(
+    "Please enter a number for selection: 1 - ROCK. 2 - PAPER. 3 - SCISSORS."
+  );
+
+  while (!/^[1-3]+$/.test(playerChoice)) {
+    alert(
+      "Please only insert number from 1 - 3! 1 - ROCK. 2 - PAPER. 3 - SCISSORS"
+    );
+    playerChoice = prompt(
+      "Please enter a number for selection: 1 - ROCK. 2 - PAPER. 3 - SCISSORS."
+    );
+  }
+
+  if (playerChoice == 1) {
+    playerChoice = "Rock";
+  }
+  if (playerChoice == 2) {
+    playerChoice = "Paper";
+  }
+  if (playerChoice == 3) {
+    playerChoice = "Scissors";
+  }
+
+  return playerChoice;
 };
 
 
@@ -51,14 +84,8 @@ const playRound = (cpu, player) => {
   }
 };
 
-console.log(playRound("Rock", getComputerChoice(choices)));
-console.log(`Player Score: ${playerScore} - CPU Score: ${computerScore}`)
-playRound("Paper", getComputerChoice(choices));
+const playGame = () => {
+  return playRound(getPlayerChoice(), getComputerChoice(choices))
+}
 
-// const playGame = () => {
-//   for (i = 1; i <= 5; i++) {
-//     playRound(computerChoice, playerSelection);
-//   }
-// };
-
-// playGame();
+console.log(playGame())
